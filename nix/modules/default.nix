@@ -139,7 +139,7 @@
     system-manager.preActivationAssertions = {
       osVersion =
         let
-          supportedIds = [ "nixos" "ubuntu" ];
+          supportedIds = [ "nixos" "ubuntu" "debian" ];
         in
         {
           enable = !config.system-manager.allowAnyDistro;
